@@ -1,0 +1,64 @@
+{
+    "name": "vscode-robot-keywords",
+    "displayName": "Robot Keywords",
+    "description": "Extension to index and search keywords in Robot Framework",
+    "version": "0.0.1",
+    "publisher": "RobotKeywordsPublisher",
+    "engines": {
+      "vscode": "^1.96.0"
+    },
+    "activationEvents": [
+      "onStartupFinished",
+      "workspaceContains:**/*.robot"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+      "viewsContainers": {
+        "activitybar": [
+          {
+            "id": "robotKeywords",
+            "title": "Robot Keywords",
+            "icon": "resources/icon.png"
+          }
+        ]
+      },
+      "views": {
+        "robotKeywords": [
+          {
+            "id": "robotKeywords",
+            "name": "Keywords"
+          }
+        ]
+      },
+      "commands": [
+        {
+          "command": "robotKeywords.refresh",
+          "title": "Refresh Keywords"
+        },
+        {
+          "command": "robotKeywords.searchKeyword",
+          "title": "Search Keywords"
+        },
+        {
+          "command": "robotKeywords.promptSearch",
+          "title": "Prompt Search"
+        },
+        {
+          "command": "robotKeywords.clearFilter",
+          "title": "Clear Filter"
+        }
+      ]
+    },
+    "scripts": {
+      "compile": "tsc",
+      "build": "tsc",
+      "watch": "tsc --watch",
+      "start": "node ./out/extension.js"
+    },
+    "devDependencies": {
+      "vsce": "^2.15.0",
+      "@types/node": "^22.13.1",
+      "@types/vscode": "^1.96.0",
+      "typescript": "^5.7.3"
+    }
+  }
