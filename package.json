@@ -12,6 +12,10 @@
       "workspaceContains:**/*.robot"
     ],
     "main": "./out/extension.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yanwes/robot_extension"
+    },
     "contributes": {
       "viewsContainers": {
         "activitybar": [

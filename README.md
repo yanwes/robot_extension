@@ -10,7 +10,7 @@
 If you don’t have the extension yet, clone the repository locally:
 
 ```sh
-git clone todo
+git clone https://github.com/yanwes/robot_extension
 cd vscode-robot-keywords
 ```
 🔹 2. Install Dependencies
